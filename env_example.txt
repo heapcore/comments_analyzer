@@ -1,0 +1,31 @@
+# Copy this file to .env and fill in your values
+
+# --- Telegram ---
+# Get these from https://my.telegram.org/apps
+TELEGRAM_API_ID=your_api_id_here
+TELEGRAM_API_HASH=your_api_hash_here
+TELEGRAM_PHONE=+your_phone_number_here
+
+# 2FA password (optional — only if two-factor authentication is enabled)
+# If not set, you will be prompted on first run
+# TELEGRAM_PASSWORD_2FA=your_2fa_password_here
+
+# Delay between Telegram requests in seconds (increase if you get FloodWaitError)
+TELEGRAM_REQUEST_DELAY=0.5
+
+# Default number of posts to fetch per run
+DEFAULT_POSTS_LIMIT=100
+
+# --- YouTube ---
+# Get an API key from https://console.cloud.google.com (enable YouTube Data API v3)
+YOUTUBE_API_KEY=your_youtube_api_key_here
+
+# Default number of videos to fetch per run
+DEFAULT_VIDEOS_LIMIT=50
+
+# --- LM Studio ---
+# Make sure LM Studio local server is running before analysis
+LM_STUDIO_API_URL=http://localhost:1234/v1/chat/completions
+
+# Comments per LLM request (recommended: 3-10; do not set above 20)
+BATCH_SIZE=5
